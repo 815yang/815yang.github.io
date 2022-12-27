@@ -1,0 +1,707 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.jpg">
+  <link rel="icon" href="/img/avatar.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Yang">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Yang">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Yang">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Yang">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>Yang</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":90,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"JAVA"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Yang</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Welcome to Yang&#39;s Blog!"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/27/%E6%80%8E%E4%B9%88%E4%BA%A4%E8%B0%88/" target="_self">
+          怎么交谈？
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/27/%E6%80%8E%E4%B9%88%E4%BA%A4%E8%B0%88/" target="_self">
+        <div>
+          怎么交谈1.不能三心二意并不是说 放下手头的手机 平板等等其它东西。 而是要融入交谈的情景中。不要想着之前和老板吵架，不要想着今晚吃什么！ 总结来说，就是专心！专注于此次交谈！心无旁骛。 这次交谈退出就退出，不要沉入其中。 2.不要好为人师不允许有专家的说教。要接受别人的反驳。 3.使用开放性问题不要限制于 yes or  no 。 可以这么问：你觉得这个怎么样？ 4.顺其自然5.如果不知道就说不
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-27 14:09" pubdate>
+              2022-12-27
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BB%8A%E6%97%A5%E6%96%B0%E7%9F%A5%E8%AF%86/" class="category-chain-item">今日新知识</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/27/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/%E7%9F%AD%E8%A7%86%E9%A2%91/" target="_self">
+          怎么做短视频?
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/27/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/%E7%9F%AD%E8%A7%86%E9%A2%91/" target="_self">
+        <div>
+          短视频怎么做好短视频内容？ 1.What？内容是什么？ 内容可以是：来自所在行业的百科，把书面语和专业术语变成大白话的演绎；把已经爆过的内容“像素级”低早拍一遍。找到合适的传播环境后，内容本身不再是最重要的！ 2.How—怎么创作？ 无需纠结好的设备，打开提词软件，用后置摄像头克服镜头恐惧，记得在视频中带上你的练习方式！ 3.Where—-去哪里发？ 内容1.反差感：是一个流量密码
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-27 11:02" pubdate>
+              2022-12-27
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/26/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/%E4%BB%8A%E6%97%A5%E5%A2%9E%E5%8A%A0%E7%9F%A5%E8%AF%862/" target="_self">
+          
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/26/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/%E4%BB%8A%E6%97%A5%E5%A2%9E%E5%8A%A0%E7%9F%A5%E8%AF%862/" target="_self">
+        <div>
+          今日增加知识2SAL（vs）微软的安全 标准注释语言。只是一个工具和手段
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-26 11:33" pubdate>
+              2022-12-26
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/24/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/%E4%BB%8A%E6%97%A5%E6%96%B0%E7%9F%A5%E8%AF%861/" target="_self">
+          今日新知识1
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/24/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/%E4%BB%8A%E6%97%A5%E6%96%B0%E7%9F%A5%E8%AF%861/" target="_self">
+        <div>
+          今日新知识1ThreadPoolExecutor类《阿里巴巴Java开发手册》中提出线程资源必须由线程池提供，不允许在应用中自行显示的创建线程。 线程池优势：线程管理规范，优化资源开销。 Executors框架 线程池中不允许 使用 Executors去创建，要通过ThreadPoolExecutor方式来创建。 原因：jdk的Excutor框架 提供如 newFixedThreadPool()、
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-24 23:26" pubdate>
+              2022-12-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BB%8A%E6%97%A5%E6%96%B0%E7%9F%A5%E8%AF%86/" class="category-chain-item">今日新知识</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/24/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/JavaNIO/" target="_self">
+          JavaNIO
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/24/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/JavaNIO/" target="_self">
+        <div>
+          JavaNIONIO（Non-blocking I&#x2F;O，在Java领域，也称为New I&#x2F;O），是一种同步非阻塞的I&#x2F;O模型，也是I&#x2F;O多路复用的基础，已经被越来越多地应用到大型应用服务器，成为解决高并发与大量连接、I&#x2F;O处理问题的有效方式。 那么NIO的本质是什么样的呢？它是怎样与事件模型结合来解放线程、提高系统吞吐的呢？ 本文会从传统的阻塞I&
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-24 23:13" pubdate>
+              2022-12-24
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/24/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/Java%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%BA%93/" target="_self">
+          
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/24/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/Java%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%BA%93/" target="_self">
+        <div>
+          Java常见类库Character类1	isLetter() 是否是一个字母 2	isDigit() 是否是一个数字 3	isWhitespace() 是否是一个空白字符 4	isUpperCase() 是否大写字母 5	isLowerCase() 是否小写字母 6	toUpperCase()	指定字母的大写形式 7	toLowerCase()	指定字母的大写形式8	toString()	转化为字
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-24 20:37" pubdate>
+              2022-12-24
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/22/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/Java%EF%BC%9A%E5%85%B3%E4%BA%8E%E5%AF%B9new%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E6%80%9D%E8%80%83/" target="_self">
+          
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/22/JAVA%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0/Java%EF%BC%9A%E5%85%B3%E4%BA%8E%E5%AF%B9new%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E6%80%9D%E8%80%83/" target="_self">
+        <div>
+          Java：关于对new关键字的思考我常常听说new一个对象！但是我很好奇 new究竟是什么？ 翻阅书籍资料 1234new关键字有以下三个作用1.为对象分配空间2.引起对象构造方法的调用3.为对象返回一个引用  让我们来一个个探究竟吧~ 1.为对象分配空间1.1没有new  1234567891011public class Math1 &#123;     public static void
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-22 14:04" pubdate>
+              2022-12-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/12/Java%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83/DAY2/" target="_self">
+          
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/12/Java%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83/DAY2/" target="_self">
+        <div>
+          DAY2进制转换1.十进制转其它进制 1短除法
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-12 13:43" pubdate>
+              2022-12-12
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/11/Java%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83/Java%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%AD%A6%E4%B9%A0/" target="_self">
+          
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/11/Java%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83/Java%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%AD%A6%E4%B9%A0/" target="_self">
+        <div>
+          Java蓝桥杯训练Day1next() 与 nextline() 123next() 一定要读到有效的字符后才能结束输入。1.有效字符前以空格键 tap键 和 Enter键等结束符,next()方法会自动过滤这些结束符号。2.有效字符后的空格键 tap键 Enter键等视为分隔符或结束符  1nextline();结束符只有Enter()  注意 12注意 ：如果next()或者nextInt()
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-11 13:35" pubdate>
+              2022-12-11
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/12/09/C%E8%AF%AD%E8%A8%80/%E5%85%B1%E5%90%8C%E5%AF%8C%E8%A3%95/" target="_self">
+          
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/09/C%E8%AF%AD%E8%A8%80/%E5%85%B1%E5%90%8C%E5%AF%8C%E8%A3%95/" target="_self">
+        <div>
+          
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-12-09 10:49" pubdate>
+              2022-12-09
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
